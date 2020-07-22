@@ -69,7 +69,7 @@ public class UpperCaseCounterTest {
     }
 
     //잘못된 값을 참조했을 때 IndexOutOfBoundsException Exception이 발생하는지 테스트 코드 작성
-    @Test
+    @Test(expected = IndexOutOfBoundsException.class)
     public void shouldThrowExceptionWhenGetZeroIndex() {
         new ArrayList<Object>().get(0);
     }
